@@ -118,14 +118,14 @@ const App=()=>{
 
     }
     return(
-        <div className="App">
+        <div className="App" id="main">
             <h1>Our Menu</h1>
 
             <ul>
-                <li><button onClick={()=>{setRenderData(data)}}>All</button></li>
-                <li><button onClick={breakFastFn}>Breakfast</button></li>
-                <li><button onClick={lunchFn}>Lunch</button></li>
-                <li><button onClick={shakesFn}>Shakes</button></li>
+                <li><button  onClick={()=>{setRenderData(data)} }>All</button></li>
+                <li><button  id="filter-btn-1" onClick={breakFastFn}>Breakfast</button></li>
+                <li><button  id="filter-btn-2" onClick={lunchFn}>Lunch</button></li>
+                <li><button  id="filter-btn-3" onClick={shakesFn}>Shakes</button></li>
             </ul>
             <Menu menuData={renderData}/>
         </div>
